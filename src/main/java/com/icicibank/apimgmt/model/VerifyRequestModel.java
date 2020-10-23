@@ -6,10 +6,7 @@ import org.springframework.stereotype.Component;
 public class VerifyRequestModel {
 
 	private String checkSumValue;
-	public FundAmount fundAmount;
-	public String fundType;
-	public String accountNo;
-	public String extendInfo;
+	private ConsultRequest request;
 
 	public VerifyRequestModel() {
 		super();
@@ -24,36 +21,13 @@ public class VerifyRequestModel {
 		this.checkSumValue = checkSum;
 	}
 
-	public FundAmount getFundAmount() {
-		return fundAmount;
+	public ConsultRequest getRequest() {
+		return request;
 	}
 
-	public void setFundAmount(FundAmount fundAmount) {
-		this.fundAmount = fundAmount;
+	public void setRequest(ConsultRequest request) {
+		this.request = request;
 	}
 
-	public String getFundType() {
-		return fundType;
-	}
-
-	public void setFundType(String fundType) {
-		this.fundType = fundType;
-	}
-
-	public String getAccountNo() {
-		return accountNo;
-	}
-
-	public void setAccountNo(String accountNo) {
-		this.accountNo = accountNo;
-	}
-
-	public String getExtendInfo() {
-		return extendInfo;
-	}
-
-	public void setExtendInfo(String extendInfo) {
-		this.extendInfo = extendInfo;
-	}
-
+	
 }
